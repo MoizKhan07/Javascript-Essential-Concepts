@@ -1,0 +1,227 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    display: none;
+}
+
+.modal{
+    padding: 2em 0;;
+    position: relative;
+    max-width: 550px;
+    background: white;
+    margin: 0 auto;
+    display: none;
+    top: 10%;
+}
+
+.modal h1{
+    color: #252525;
+    width: 100%;
+    border-bottom: 1px solid rgb(175, 173, 173);
+    text-align: center;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+    margin-top: 0;
+}
+
+.modal input{
+    border: none;
+    border-bottom: 1px solid rgb(175, 173, 173);
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    margin-bottom: 40px;
+}
+
+.input{
+    max-width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.input a{
+    margin-left: 100%;
+    width: 200px;
+    color: rgb(0, 119, 255);
+    margin-bottom: 30px;
+}
+
+.btn{
+    color: white;
+    background-color: royalblue;
+    padding: 15px 60px;
+    border: none;
+}
+
+.btn:hover,
+.btn:active{
+    background-color: rgb(55, 97, 223);
+}
+
+.input button{
+    width: 100%; 
+}
+
+.modal p{
+    text-align: center;
+    color: #252525;
+    font-size: 20px;
+}
+
+.links{
+    display: flex;
+    margin: 0 auto;
+    max-width: 40%;
+    justify-content: center;
+}
+
+.links a{
+    color: white;
+}
+
+#facebook,
+#twitter,
+#gmail {
+    padding: 20px 40px;
+    margin: 5px;
+    box-shadow: 2px 2px 5px black;
+}
+
+#facebook{
+    background-color: #4267B2;
+}
+
+#twitter{
+    background-color: #7e38b6;
+}
+
+#gmail{
+    background-color: #d21c38;
+}
+
+#close-btn{
+    background: none;
+    border: none;
+    margin-left: 92%;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#sign-in{
+    border-radius: 10px;
+}
+
+.nav{
+    background-color: #252525;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+#search-btn{
+    border-radius: 50%;
+    background-color: whitesmoke;
+    color: #252525;
+    font-weight: bold;
+    padding: 15px;
+    margin: 0;
+    border: none;
+}
+
+#search-btn:hover,
+#search-btn:active {
+    background-color: #1e776d;
+    color: #033933;
+}
+
+.nav input{
+    width: 300px;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 0 10px 0 40%;
+}
+
+.names-section{
+    background-color: #252525;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: center;
+}
+.names-section ul{
+    list-style: none;
+    width: 80%;
+}
+.names-section li{
+    background-color: #1e776d;
+    color: whitesmoke;
+    margin: 0px 0 30px 0;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 10px 10px 20px black;
+    font-weight: 900;
+    font-size: 30px;
+}
+
+#carousel{
+    position: relative;
+    width: 100%;
+    margin: 0;
+    height: 90vh;
+}
+
+.carousel-item{
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+.carousel-item-hidden{
+    display: none;
+}
+.carousel-item-visible{
+    display: block;
+}
+
+.carousel-item img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.carousel-actions{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 2em;
+}
+
+.carousel-actions button{
+    background: rgba(0, 0, 0, .3);
+    font-weight: bold;
+    padding: .5em 1em;
+    border-radius: 50%;
+    border: 1px solid rgb(235, 233, 233);
+    color: white;
+    transition: background 250ms;
+}
+
+.carousel-actions button:hover,
+.carousel-actions button:focus{
+    background: #252525;
+}
